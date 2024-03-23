@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+body{
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+.log{
+    width: 100vw;
+    height: 100vh;
+    background-color:rgba(3, 32, 42, 1); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.log2{
+    width:70vw;
+    height:80vh;
+    background-color: rgba(4, 52, 68, 1);
+    border-radius: 15px;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.logdireita{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    gap: 20px;
+}
+
+.logdireita> h1 {
+    color: rgb(0, 233, 159);
+    font-size: 3vw;
+}
+.hi{
+    width:18vw;
+    height:12vh;
+    background-color: rgba(94, 58, 120, 0.395); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 40px #0c826e89;
+    border-radius: 15px;
+}
+
+
+#mode_icon{
+    cursor: pointer;
+    font-size: 35px;
+}
+
+
+.comteudo{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:70px;
+}
+
+.comteudo_cel{
+    display:none;
+}
+.img{
+    width: 20vw;
+}
+
+#img-net{
+    width: 30vw;
+}
+.logesqueda{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imp{
+    gap: 30px;
+}
+.lodcontent{
+    width: 60%;
+    height: 54%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px  35px;
+    background:rgba(234, 124, 4, 1);
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+    gap: 20px;
+}
+
+.comteudo > h1{
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-align: center;
+    margin-left: 79px;
+}
+
+
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+    gap:1px;
+}
+
+.content >input{
+    width:310px;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #ffffff;
+    color: rgb(0, 0, 0) ;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.content > label{
+    color: rgb(255, 255, 255);
+    font-family: "Inria Sans", sans-serif;
+}
+
+.content > input::placeholder {
+    color: rgb(0, 0, 0);
+}
+
+.but{
+    width:310px;
+    padding: 16px 0px;
+    margin: 25px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    text-transform:uppercase;
+    font-weight:500 ;
+    letter-spacing: 3px;
+    color: #ffffff;
+    background:rgba(60, 100, 116, 1);
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 950px){
+    .content{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+
+    .log{
+        flex-direction: column;
+        gap:40px;
+    }
+
+    .logdireita > h1{
+        display: none;
+        outline: none;
+    }
+
+    .logdireita{
+        width: 100%;
+        height: auto;
+    }
+    .logesqueda{
+        width: 100%;
+        height: auto;
+    }
+
+    .img{
+        width: 40vh;
+        margin: auto;
+    }
+
+    .content{
+        width: 110%;
+    }
+
+    .content > input{
+    width:250px;
+    }
+    
+    .but{
+        width:250px;
+        }
+    
+
+}
